@@ -1,0 +1,30 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly HealthStyleController, Version=1.0.*, Culture=Todos los idiomas (todos los países): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly HealthStyleModel, Version=1.0.*, Culture=Todos los idiomas (todos los países): 
+	hash=None, flags=None
+Assembly HealthStylePersistance, Version=1.0.*, Culture=Todos los idiomas (todos los países): 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly HealthStylePersistance, Version=1.0.*, Culture=Todos los idiomas (todos los países): 
+	hash=None, flags=None
+Class HealthStyleController.Controller: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    AddMedicine(Medicines): PrivateScope, Public, Static, HideBySig
+    QueryMedicineById(Int32): PrivateScope, Public, Static, HideBySig
+    QueryAllMedicines(): PrivateScope, Public, Static, HideBySig
+    UpdateMedicine(Medicines): PrivateScope, Public, Static, HideBySig
+    DeleteMedicine(Int32): PrivateScope, Public, Static, HideBySig
+    AddDoctor(Doctor): PrivateScope, Public, Static, HideBySig
+    QueryDoctorById(Int32): PrivateScope, Public, Static, HideBySig
+    QueryAllDoctor(): PrivateScope, Public, Static, HideBySig
+    UpdateDoctor(Doctor): PrivateScope, Public, Static, HideBySig
+    DeleteDoctor(Int32): PrivateScope, Public, Static, HideBySig

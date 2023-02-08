@@ -1,0 +1,186 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly HealthStyleModel, Version=1.0.*, Culture=Todos los idiomas (todos los países): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class HealthStyleModel.Person: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    SByte Status 'get set' IsSignUnspecifiedByte : 
+    System.String Email 'get set' : 
+    System.String PhoneNumber 'get set' : 
+    System.String Address 'get set' : 
+    System.String DocNumber 'get set' : 
+    System.String LastName 'get set' : 
+    System.String Name 'get set' : 
+    Int32 Id   'get set' : 
+  Methods:
+    get_Id(): PrivateScope, Public, HideBySig, SpecialName
+    set_Id(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_LastName(): PrivateScope, Public, HideBySig, SpecialName
+    set_LastName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_DocNumber(): PrivateScope, Public, HideBySig, SpecialName
+    set_DocNumber(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Address(): PrivateScope, Public, HideBySig, SpecialName
+    set_Address(String): PrivateScope, Public, HideBySig, SpecialName
+    get_PhoneNumber(): PrivateScope, Public, HideBySig, SpecialName
+    set_PhoneNumber(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Email(): PrivateScope, Public, HideBySig, SpecialName
+    set_Email(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Status(): PrivateScope, Public, HideBySig, SpecialName
+    set_Status(SByte IsSignUnspecifiedByte): PrivateScope, Public, HideBySig, SpecialName
+Class HealthStyleModel.Employee: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :HealthStyleModel.Person
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 YearsOfWork 'get set' : 
+    System.String Schedule 'get set' : 
+    System.String Birthday 'get set' : 
+    SByte Gender 'get set' IsSignUnspecifiedByte : 
+    System.String Password 'get set' : 
+    System.String Username 'get set' : 
+  Methods:
+    get_Username(): PrivateScope, Public, HideBySig, SpecialName
+    set_Username(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Password(): PrivateScope, Public, HideBySig, SpecialName
+    set_Password(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Gender(): PrivateScope, Public, HideBySig, SpecialName
+    set_Gender(SByte IsSignUnspecifiedByte): PrivateScope, Public, HideBySig, SpecialName
+    get_Birthday(): PrivateScope, Public, HideBySig, SpecialName
+    set_Birthday(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Schedule(): PrivateScope, Public, HideBySig, SpecialName
+    set_Schedule(String): PrivateScope, Public, HideBySig, SpecialName
+    get_YearsOfWork(): PrivateScope, Public, HideBySig, SpecialName
+    set_YearsOfWork(Int32): PrivateScope, Public, HideBySig, SpecialName
+Class HealthStyleModel.Doctor: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :HealthStyleModel.Employee
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 PatiensAttended 'get set' : 
+    System.String Speciality 'get set' : 
+  Methods:
+    get_Speciality(): PrivateScope, Public, HideBySig, SpecialName
+    set_Speciality(String): PrivateScope, Public, HideBySig, SpecialName
+    get_PatiensAttended(): PrivateScope, Public, HideBySig, SpecialName
+    set_PatiensAttended(Int32): PrivateScope, Public, HideBySig, SpecialName
+Class HealthStyleModel.Class1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class HealthStyleModel.MedicalHistory: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Tratamientos 'get set' : 
+    System.String Enfermedades 'get set' : 
+    Double Weight 'get set' : 
+    Double Height 'get set' : 
+  Methods:
+    get_Height(): PrivateScope, Public, HideBySig, SpecialName
+    set_Height(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Weight(): PrivateScope, Public, HideBySig, SpecialName
+    set_Weight(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Enfermedades(): PrivateScope, Public, HideBySig, SpecialName
+    set_Enfermedades(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Tratamientos(): PrivateScope, Public, HideBySig, SpecialName
+    set_Tratamientos(String): PrivateScope, Public, HideBySig, SpecialName
+Class HealthStyleModel.Medicines: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Byte[] Photo 'get set' : 
+    Int32 Stock 'get set' : 
+    Double Price 'get set' : 
+    System.String Description 'get set' : 
+    System.String Name 'get set' : 
+    Int32 Id   'get set' : 
+  Methods:
+    get_Id(): PrivateScope, Public, HideBySig, SpecialName
+    set_Id(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Description(): PrivateScope, Public, HideBySig, SpecialName
+    set_Description(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Price(): PrivateScope, Public, HideBySig, SpecialName
+    set_Price(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Stock(): PrivateScope, Public, HideBySig, SpecialName
+    set_Stock(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Photo(): PrivateScope, Public, HideBySig, SpecialName
+    set_Photo(Byte[]): PrivateScope, Public, HideBySig, SpecialName
+Class HealthStyleModel.Nurses: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :HealthStyleModel.Employee
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String Speciality : Public
+    Int32 PatiensAttended : Public
+Class HealthStyleModel.Patient: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :HealthStyleModel.Person
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String DateQuote 'get set' : 
+    SByte Seguro 'get set' IsSignUnspecifiedByte : 
+  Methods:
+    get_Seguro(): PrivateScope, Public, HideBySig, SpecialName
+    set_Seguro(SByte IsSignUnspecifiedByte): PrivateScope, Public, HideBySig, SpecialName
+    get_DateQuote(): PrivateScope, Public, HideBySig, SpecialName
+    set_DateQuote(String): PrivateScope, Public, HideBySig, SpecialName
+Class HealthStyleModel.Pharmacist: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :HealthStyleModel.Employee
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 MedicinesSold 'get set' : 
+    Int32 MedicinesDelivered 'get set' : 
+  Methods:
+    get_MedicinesDelivered(): PrivateScope, Public, HideBySig, SpecialName
+    set_MedicinesDelivered(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MedicinesSold(): PrivateScope, Public, HideBySig, SpecialName
+    set_MedicinesSold(Int32): PrivateScope, Public, HideBySig, SpecialName
+Class HealthStyleModel.Prescription: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String Date : Public
+    System.String Description : Public
+    Double Total : Public
+    System.String PacientName : Public
+    System.String DoctorName : Public
+Class HealthStyleModel.PrescriptionDetails: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double UnitPrice 'get set' : 
+    Double SubTotal 'get set' : 
+    Int32 Quantity 'get set' : 
+    Int32 Id   'get set' : 
+  Methods:
+    get_Id(): PrivateScope, Public, HideBySig, SpecialName
+    set_Id(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Quantity(): PrivateScope, Public, HideBySig, SpecialName
+    set_Quantity(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_SubTotal(): PrivateScope, Public, HideBySig, SpecialName
+    set_SubTotal(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_UnitPrice(): PrivateScope, Public, HideBySig, SpecialName
+    set_UnitPrice(Double): PrivateScope, Public, HideBySig, SpecialName
+Class HealthStyleModel.Quote: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Reason 'get set' : 
+    System.String Speciality 'get set' : 
+    System.String Date 'get set' : 
+  Methods:
+    get_Date(): PrivateScope, Public, HideBySig, SpecialName
+    set_Date(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Speciality(): PrivateScope, Public, HideBySig, SpecialName
+    set_Speciality(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Reason(): PrivateScope, Public, HideBySig, SpecialName
+    set_Reason(String): PrivateScope, Public, HideBySig, SpecialName
+Class HealthStyleModel.Secretary: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :HealthStyleModel.Employee
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 NumberOfQuotes 'get set' : 
+  Methods:
+    get_NumberOfQuotes(): PrivateScope, Public, HideBySig, SpecialName
+    set_NumberOfQuotes(Int32): PrivateScope, Public, HideBySig, SpecialName

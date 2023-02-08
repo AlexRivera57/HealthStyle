@@ -1,0 +1,11 @@
+﻿  Doctor.cpp
+  Employee.cpp
+  Medicines.cpp
+  Nurses.cpp
+  Patient.cpp
+  Person.cpp
+  Pharmacist.cpp
+  Secretary.cpp
+  Generando código...
+  AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
+  HealthStyleModel.vcxproj -> C:\LPOO\git\HealthStyleModel-master\HealthStyleModel-master\x64\Debug\HealthStyleModel.dll
