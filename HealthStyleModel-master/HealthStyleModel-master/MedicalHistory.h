@@ -15,7 +15,7 @@ namespace HealthStyleModel {
         property String^ BloodType;
         property String^ PreviusDiseases;
         property String^ CurrentsDiseases;
-        property String^ Medicines;
+        property String^ MedicinesTaken;
         property String^ Treatmens;
 
     };
