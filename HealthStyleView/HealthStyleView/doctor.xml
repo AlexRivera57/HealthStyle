@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDoctor xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Doctor>
+    <Status>65</Status>
+    <Email>avaavavaava</Email>
+    <PhoneNumber>123145151</PhoneNumber>
+    <Address>adadaadadad</Address>
+    <DocNumber>12313141</DocNumber>
+    <LastName>asass</LastName>
+    <Name>asdadadad</Name>
+    <Id>1</Id>
+    <YearsOfWork>0</YearsOfWork>
+    <Schedule>1231415</Schedule>
+    <Birthday>2023-02-08</Birthday>
+    <Gender>77</Gender>
+    <Password>asdadsda</Password>
+    <Username>asdad</Username>
+    <PatiensAttended>0</PatiensAttended>
+    <Speciality>aafafa</Speciality>
+  </Doctor>
+</ArrayOfDoctor>
