@@ -3,6 +3,7 @@
 #include "QuoteForm.h"
 #include "ProfessionalSearchForm.h"
 #include "MedicalHistoryForm.h"
+#include "PatientForm.h"
 
 namespace HealthStyleView {
 
@@ -78,8 +79,8 @@ namespace HealthStyleView {
 			this->operacionesToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->buscarProfesionalesToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->solicitarCitaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->ayudaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->historialMédicoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->ayudaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -122,20 +123,21 @@ namespace HealthStyleView {
 			// pacientesToolStripMenuItem
 			// 
 			this->pacientesToolStripMenuItem->Name = L"pacientesToolStripMenuItem";
-			this->pacientesToolStripMenuItem->Size = System::Drawing::Size(134, 22);
+			this->pacientesToolStripMenuItem->Size = System::Drawing::Size(180, 22);
 			this->pacientesToolStripMenuItem->Text = L"Pacientes";
+			this->pacientesToolStripMenuItem->Click += gcnew System::EventHandler(this, &HealthStyleMainForm::pacientesToolStripMenuItem_Click);
 			// 
 			// doctoresToolStripMenuItem
 			// 
 			this->doctoresToolStripMenuItem->Name = L"doctoresToolStripMenuItem";
-			this->doctoresToolStripMenuItem->Size = System::Drawing::Size(134, 22);
+			this->doctoresToolStripMenuItem->Size = System::Drawing::Size(180, 22);
 			this->doctoresToolStripMenuItem->Text = L"Doctores";
 			this->doctoresToolStripMenuItem->Click += gcnew System::EventHandler(this, &HealthStyleMainForm::doctoresToolStripMenuItem_Click);
 			// 
 			// enfermerosToolStripMenuItem
 			// 
 			this->enfermerosToolStripMenuItem->Name = L"enfermerosToolStripMenuItem";
-			this->enfermerosToolStripMenuItem->Size = System::Drawing::Size(134, 22);
+			this->enfermerosToolStripMenuItem->Size = System::Drawing::Size(180, 22);
 			this->enfermerosToolStripMenuItem->Text = L"Enfermeros";
 			// 
 			// operacionesToolStripMenuItem
@@ -162,18 +164,18 @@ namespace HealthStyleView {
 			this->solicitarCitaToolStripMenuItem->Text = L"Solicitar Cita";
 			this->solicitarCitaToolStripMenuItem->Click += gcnew System::EventHandler(this, &HealthStyleMainForm::solicitarCitaToolStripMenuItem_Click);
 			// 
-			// ayudaToolStripMenuItem
-			// 
-			this->ayudaToolStripMenuItem->Name = L"ayudaToolStripMenuItem";
-			this->ayudaToolStripMenuItem->Size = System::Drawing::Size(53, 20);
-			this->ayudaToolStripMenuItem->Text = L"Ayuda";
-			// 
 			// historialMédicoToolStripMenuItem
 			// 
 			this->historialMédicoToolStripMenuItem->Name = L"historialMédicoToolStripMenuItem";
 			this->historialMédicoToolStripMenuItem->Size = System::Drawing::Size(182, 22);
 			this->historialMédicoToolStripMenuItem->Text = L"Historial Médico";
 			this->historialMédicoToolStripMenuItem->Click += gcnew System::EventHandler(this, &HealthStyleMainForm::historialMédicoToolStripMenuItem_Click);
+			// 
+			// ayudaToolStripMenuItem
+			// 
+			this->ayudaToolStripMenuItem->Name = L"ayudaToolStripMenuItem";
+			this->ayudaToolStripMenuItem->Size = System::Drawing::Size(53, 20);
+			this->ayudaToolStripMenuItem->Text = L"Ayuda";
 			// 
 			// HealthStyleMainForm
 			// 
@@ -214,6 +216,12 @@ private: System::Void historialMédicoToolStripMenuItem_Click(System::Object^ sen
 	MedicalHistoryForm^ medicalHistoryForm = gcnew MedicalHistoryForm();
 	medicalHistoryForm->MdiParent = this;
 	medicalHistoryForm->Show();
+}
+private: System::Void pacientesToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	PatientForm^ patientForm = gcnew PatientForm();
+	patientForm->MdiParent = this;
+	patientForm->Show();
+
 }
 };
 }
