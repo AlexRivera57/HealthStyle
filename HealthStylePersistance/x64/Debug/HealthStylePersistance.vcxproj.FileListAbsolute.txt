@@ -1,0 +1,2 @@
+C:\LPOO\git\HealthStylePersistance\x64\Debug\HealthStylePersistance.vcxproj.AssemblyReference.cache
+C:\LPOO\git\HealthStylePersistance\x64\Debug\HealthStylePersistance.vcxproj.CopyComplete
