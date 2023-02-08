@@ -196,6 +196,12 @@
     <EmbeddedResource Include="MedicalHistoryForm.resx">
       <DependentUpon>MedicalHistoryForm.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NurseForm.resx">
+      <DependentUpon>NurseForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientForm.resx">
+      <DependentUpon>PatientForm.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProfessionalSearchForm.resx">
       <DependentUpon>ProfessionalSearchForm.h</DependentUpon>
     </EmbeddedResource>
