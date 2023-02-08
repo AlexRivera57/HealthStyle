@@ -1,3 +1,7 @@
-﻿  HealthStyleController.cpp
+﻿  pch.cpp
+  AssemblyInfo.cpp
+  HealthStyleController.cpp
+  Generando código...
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
   AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
-  HealthStyleController.vcxproj -> D:\LPOO\HealthStyle\HealthStyleModel-master\HealthStyleModel-master\x64\Debug\HealthStyleController.dll
+  HealthStyleController.vcxproj -> D:\LPOO\Repositorios\HealthStyleModel-master\HealthStyleModel-master\x64\Debug\HealthStyleController.dll

@@ -3,9 +3,10 @@
   DoctorForm.cpp
   HealthStyleMainForm.cpp
   HealthStyleView.cpp
+  MedicalHistoryForm.cpp
   ProfessionalSearchForm.cpp
   QuoteForm.cpp
   Generando código...
   .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
   AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
-  HealthStyleView.vcxproj -> D:\LPOO\HealthStyle\HealthStyleModel-master\HealthStyleModel-master\x64\Debug\HealthStyleView.exe
+  HealthStyleView.vcxproj -> D:\LPOO\Repositorios\HealthStyleModel-master\HealthStyleModel-master\x64\Debug\HealthStyleView.exe

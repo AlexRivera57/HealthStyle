@@ -6,3 +6,11 @@ D:\LPOO\HealthStyle\HealthStyleView\HealthStyleView\x64\Debug\HealthStyleView.vc
 D:\LPOO\HealthStyle\HealthStyleView\HealthStyleView\x64\Debug\HealthStyleView.DoctorForm.resources
 D:\LPOO\HealthStyle\HealthStyleView\HealthStyleView\x64\Debug\HealthStyleView.ProfessionalSearchForm.resources
 D:\LPOO\HealthStyle\HealthStyleView\HealthStyleView\x64\Debug\HealthStyleView.QuoteForm.resources
+D:\LPOO\Repositorios\HealthStyleView\HealthStyleView\x64\Debug\HealthStyleView.vcxproj.AssemblyReference.cache
+D:\LPOO\Repositorios\HealthStyleView\HealthStyleView\x64\Debug\HealthStyleView.vcxproj.SuggestedBindingRedirects.cache
+D:\LPOO\Repositorios\HealthStyleView\HealthStyleView\x64\Debug\HealthStyleView.DoctorForm.resources
+D:\LPOO\Repositorios\HealthStyleView\HealthStyleView\x64\Debug\HealthStyleView.HealthStyleMainForm.resources
+D:\LPOO\Repositorios\HealthStyleView\HealthStyleView\x64\Debug\HealthStyleView.ProfessionalSearchForm.resources
+D:\LPOO\Repositorios\HealthStyleView\HealthStyleView\x64\Debug\HealthStyleView.QuoteForm.resources
+D:\LPOO\Repositorios\HealthStyleView\HealthStyleView\x64\Debug\HealthStyleView.vcxproj.GenerateResource.cache
+D:\LPOO\Repositorios\HealthStyleView\HealthStyleView\x64\Debug\HealthStyleView.vcxproj.CopyComplete

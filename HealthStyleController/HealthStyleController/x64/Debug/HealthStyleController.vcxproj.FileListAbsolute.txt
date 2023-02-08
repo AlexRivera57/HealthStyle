@@ -1,2 +1,4 @@
 D:\LPOO\HealthStyle\HealthStyleController\HealthStyleController\x64\Debug\HealthStyleController.vcxproj.AssemblyReference.cache
 D:\LPOO\HealthStyle\HealthStyleController\HealthStyleController\x64\Debug\HealthStyleController.vcxproj.CopyComplete
+D:\LPOO\Repositorios\HealthStyleController\HealthStyleController\x64\Debug\HealthStyleController.vcxproj.AssemblyReference.cache
+D:\LPOO\Repositorios\HealthStyleController\HealthStyleController\x64\Debug\HealthStyleController.vcxproj.CopyComplete
