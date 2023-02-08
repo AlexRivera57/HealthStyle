@@ -1,7 +1,0 @@
-﻿  pch.cpp
-  AssemblyInfo.cpp
-  HealthStylePersistance.cpp
-  Generando código...
-  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
-  AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
-  HealthStylePersistance.vcxproj -> D:\LPOO\Proyecto\git\HealthStyleModel-master\HealthStyleModel-master\x64\Debug\HealthStylePersistance.dll
