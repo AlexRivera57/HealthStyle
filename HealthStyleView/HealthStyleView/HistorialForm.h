@@ -59,6 +59,8 @@ namespace HealthStyleView {
 
 	private: System::Windows::Forms::TextBox^ txtWeight;
 	private: System::Windows::Forms::TextBox^ txtDiseases;
+
+
 	private: System::Windows::Forms::TextBox^ txtTreatments;
 
 
@@ -77,6 +79,13 @@ namespace HealthStyleView {
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Weight;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Diseases;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Treatments;
+	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::TextBox^ txtPreviousDiseases;
+	private: System::Windows::Forms::Label^ label7;
+	private: System::Windows::Forms::Label^ label8;
+	private: System::Windows::Forms::TextBox^ txtBloodType;
+	private: System::Windows::Forms::TextBox^ txtMedicines;
+
 
 
 
@@ -117,6 +126,12 @@ namespace HealthStyleView {
 			this->Weight = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Diseases = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Treatments = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->txtPreviousDiseases = (gcnew System::Windows::Forms::TextBox());
+			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->txtBloodType = (gcnew System::Windows::Forms::TextBox());
+			this->txtMedicines = (gcnew System::Windows::Forms::TextBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dgvHistorial))->BeginInit();
 			this->SuspendLayout();
@@ -124,7 +139,7 @@ namespace HealthStyleView {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(115, 71);
+			this->label1->Location = System::Drawing::Point(134, 71);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(38, 13);
 			this->label1->TabIndex = 1;
@@ -134,7 +149,7 @@ namespace HealthStyleView {
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(115, 115);
+			this->label2->Location = System::Drawing::Point(134, 111);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(41, 13);
 			this->label2->TabIndex = 2;
@@ -143,16 +158,16 @@ namespace HealthStyleView {
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(115, 158);
+			this->label3->Location = System::Drawing::Point(88, 260);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(50, 13);
+			this->label3->Size = System::Drawing::Size(87, 13);
 			this->label3->TabIndex = 3;
-			this->label3->Text = L"Diseases";
+			this->label3->Text = L"Current Diseases";
 			// 
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(115, 214);
+			this->label4->Location = System::Drawing::Point(115, 395);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(60, 13);
 			this->label4->TabIndex = 4;
@@ -174,7 +189,7 @@ namespace HealthStyleView {
 			// 
 			// txtDiseases
 			// 
-			this->txtDiseases->Location = System::Drawing::Point(205, 150);
+			this->txtDiseases->Location = System::Drawing::Point(205, 257);
 			this->txtDiseases->Multiline = true;
 			this->txtDiseases->Name = L"txtDiseases";
 			this->txtDiseases->Size = System::Drawing::Size(153, 48);
@@ -182,7 +197,7 @@ namespace HealthStyleView {
 			// 
 			// txtTreatments
 			// 
-			this->txtTreatments->Location = System::Drawing::Point(205, 214);
+			this->txtTreatments->Location = System::Drawing::Point(205, 395);
 			this->txtTreatments->Multiline = true;
 			this->txtTreatments->Name = L"txtTreatments";
 			this->txtTreatments->Size = System::Drawing::Size(243, 57);
@@ -201,16 +216,16 @@ namespace HealthStyleView {
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(541, 42);
+			this->pictureBox1->Location = System::Drawing::Point(549, 103);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(211, 205);
+			this->pictureBox1->Size = System::Drawing::Size(250, 240);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox1->TabIndex = 10;
 			this->pictureBox1->TabStop = false;
 			// 
 			// btnAdd
 			// 
-			this->btnAdd->Location = System::Drawing::Point(131, 315);
+			this->btnAdd->Location = System::Drawing::Point(158, 470);
 			this->btnAdd->Name = L"btnAdd";
 			this->btnAdd->Size = System::Drawing::Size(75, 23);
 			this->btnAdd->TabIndex = 11;
@@ -220,7 +235,7 @@ namespace HealthStyleView {
 			// 
 			// btnModify
 			// 
-			this->btnModify->Location = System::Drawing::Point(373, 315);
+			this->btnModify->Location = System::Drawing::Point(400, 470);
 			this->btnModify->Name = L"btnModify";
 			this->btnModify->Size = System::Drawing::Size(75, 23);
 			this->btnModify->TabIndex = 12;
@@ -230,7 +245,7 @@ namespace HealthStyleView {
 			// 
 			// btnDelete
 			// 
-			this->btnDelete->Location = System::Drawing::Point(570, 315);
+			this->btnDelete->Location = System::Drawing::Point(597, 470);
 			this->btnDelete->Name = L"btnDelete";
 			this->btnDelete->Size = System::Drawing::Size(75, 23);
 			this->btnDelete->TabIndex = 13;
@@ -245,7 +260,7 @@ namespace HealthStyleView {
 				this->Nombres,
 					this->Height, this->Weight, this->Diseases, this->Treatments
 			});
-			this->dgvHistorial->Location = System::Drawing::Point(37, 368);
+			this->dgvHistorial->Location = System::Drawing::Point(39, 513);
 			this->dgvHistorial->Name = L"dgvHistorial";
 			this->dgvHistorial->Size = System::Drawing::Size(772, 205);
 			this->dgvHistorial->TabIndex = 14;
@@ -278,11 +293,69 @@ namespace HealthStyleView {
 			this->Treatments->Name = L"Treatments";
 			this->Treatments->Width = 200;
 			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->Location = System::Drawing::Point(81, 192);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(94, 13);
+			this->label6->TabIndex = 16;
+			this->label6->Text = L"Previous Diseases";
+			this->label6->Click += gcnew System::EventHandler(this, &HistorialForm::label6_Click);
+			// 
+			// txtPreviousDiseases
+			// 
+			this->txtPreviousDiseases->Location = System::Drawing::Point(205, 189);
+			this->txtPreviousDiseases->Multiline = true;
+			this->txtPreviousDiseases->Name = L"txtPreviousDiseases";
+			this->txtPreviousDiseases->Size = System::Drawing::Size(153, 46);
+			this->txtPreviousDiseases->TabIndex = 17;
+			this->txtPreviousDiseases->TextChanged += gcnew System::EventHandler(this, &HistorialForm::textBox1_TextChanged);
+			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->Location = System::Drawing::Point(118, 153);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(58, 13);
+			this->label7->TabIndex = 18;
+			this->label7->Text = L"BloodType";
+			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->Location = System::Drawing::Point(120, 330);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(55, 13);
+			this->label8->TabIndex = 19;
+			this->label8->Text = L"Medicines";
+			// 
+			// txtBloodType
+			// 
+			this->txtBloodType->Location = System::Drawing::Point(205, 153);
+			this->txtBloodType->Name = L"txtBloodType";
+			this->txtBloodType->Size = System::Drawing::Size(100, 20);
+			this->txtBloodType->TabIndex = 20;
+			// 
+			// txtMedicines
+			// 
+			this->txtMedicines->Location = System::Drawing::Point(205, 327);
+			this->txtMedicines->Multiline = true;
+			this->txtMedicines->Name = L"txtMedicines";
+			this->txtMedicines->Size = System::Drawing::Size(243, 47);
+			this->txtMedicines->TabIndex = 21;
+			// 
 			// HistorialForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(862, 585);
+			this->ClientSize = System::Drawing::Size(862, 730);
+			this->Controls->Add(this->txtMedicines);
+			this->Controls->Add(this->txtBloodType);
+			this->Controls->Add(this->label8);
+			this->Controls->Add(this->label7);
+			this->Controls->Add(this->txtPreviousDiseases);
+			this->Controls->Add(this->label6);
 			this->Controls->Add(this->dgvHistorial);
 			this->Controls->Add(this->btnDelete);
 			this->Controls->Add(this->btnModify);
@@ -316,7 +389,10 @@ private: System::Void btnAdd_Click(System::Object^ sender, System::EventArgs^ e)
 	Historial^ historial = gcnew Historial();
 	Historial->Height = Convert::ToDouble(txtHeight->Text);
 	Historial->Weight = Convert::ToDouble(txtWeight->Text);
+	Historial->BloodType = Convert::ToChar(txtBloodType->Text);
+	Historial->PreviousDiseases = txtPreviousDiseases->Text;
 	Historial->Diseases = txtDiseases->Text;
+	Historial->Medicines = txtMedicines->Text;
 	Historial->Treatments = txtTreatments->Text;
 
 	Controller::AddHistorial(historial);
@@ -332,7 +408,10 @@ private: System::Void btnAdd_Click(System::Object^ sender, System::EventArgs^ e)
 			   dgvHistorial->Rows->Add(gcnew array<String^>{
 				   "" + myHistorialList[i]->Height,
 					   myHistorialList[i]->Weight,
+					   "" + myHistorialList[i]->BloodType,
+					   "" + myHistorialList[i]->PrevousDiseases,
 					   "" + myHistorialList[i]->Diseases,
+					   "" + myHistorialList[i]->Medicines,
 					   "" + myHistorialList[i]->Treatments
 			   });
 		   }
@@ -341,7 +420,10 @@ private: System::Void btnAdd_Click(System::Object^ sender, System::EventArgs^ e)
 	   void CleanControls() {
 		   txtHeight->Clear();
 		   txtWeight->Clear();
+		   txtBloodType->Clear();
+		   txtPreviousDiseases->Clear();
 		   txtDiseases->Clear();
+		   txtMedicines->Clear();
 		   txtTreatments->Clear();
 	   }
 
@@ -349,7 +431,10 @@ private: System::Void btnModify_Click(System::Object^ sender, System::EventArgs^
 	Historial^ historial = gcnew Historial();
 	Historial->Height = Convert::ToDouble(txtHeight->Text);
 	Historial->Weight = Convert::ToDouble(txtWeight->Text);
+	Historial->BloodType = Convert::ToChar(txtBloodType->Text);
+	Historial->PreviousDiseases = txtPreviousDiseases->Text;
 	Historial->Diseases = txtDiseases->Text;
+	Historial->Medicines = txtMedicines->Text;
 	Historial->Treatments = txtTreatments->Text;
 
 	Controller::UpdateHistorial(historial);
@@ -364,6 +449,10 @@ private: System::Void btnDelete_Click(System::Object^ sender, System::EventArgs^
 	Controller::DeleteHistorial(Convert::ToInt32(txtWeight->Text->Trim()));
 	CleanControls();
 	ShowHistorial();
+}
+private: System::Void label6_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
