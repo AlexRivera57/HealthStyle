@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "HealthStyleController.h"
+using namespace HealthStylePersistance;
 
 int HealthStyleController::Controller::AddDoctor(Doctor^ doctor)
 {
@@ -43,4 +44,40 @@ Doctor^ HealthStyleController::Controller::QueryDoctorById(int doctorId){
         if (doctorId == doctorList[i]->Id)
             return doctorList[i];
     return nullptr;
+}
+
+//Historial Controller actions
+int HealthStyleController::Controller::AddHistorial(Historial^ historial)
+{
+    historialList->Add(historial);
+    Persistance::PersistBinary("historial.bin", historialList);
+    return historial->Id;
+}
+
+List<Historial^>^ HealthStyleController::Controller::QueryAllHistorial()
+{
+    historialList = (List<Historial^>^)Persistance::LoadBinaryData("historial.bin");
+    return historialList;
+}
+
+int HealthStyleController::Controller::UpdateHistorial(Historial^ historial)
+{
+    for (int i = 0; i < productList->Count; i++)
+        if (historialList[i]->Id == historial->Id) {
+            historialList[i] = historial;
+            Persistance::PersistBinary("historial.bin", historialList);
+            return historial->Id;
+        }
+    return 0;
+}
+
+int HealthStyleController::Controller::DeleteProduct(int historialId)
+{
+    for (int i = 0; i < historialList->Count; i++)
+        if (historialList[i]->Id == historialId) {
+            historialList->RemoveAt(i);
+            Persistance::PersistBinary("products.bin", productList);
+            return historialId;
+        }
+    return 0;
 }
