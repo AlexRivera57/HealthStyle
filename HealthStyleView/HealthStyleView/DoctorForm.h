@@ -259,9 +259,9 @@ namespace HealthStyleView {
 			this->label10->AutoSize = true;
 			this->label10->Location = System::Drawing::Point(32, 270);
 			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(86, 13);
+			this->label10->Size = System::Drawing::Size(80, 13);
 			this->label10->TabIndex = 9;
-			this->label10->Text = L"Escpecialidad (*)";
+			this->label10->Text = L"Especialidad (*)";
 			// 
 			// label11
 			// 
@@ -447,6 +447,7 @@ namespace HealthStyleView {
 			this->dgvDoctor->Name = L"dgvDoctor";
 			this->dgvDoctor->Size = System::Drawing::Size(536, 159);
 			this->dgvDoctor->TabIndex = 29;
+			this->dgvDoctor->CellClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &DoctorForm::dgvDoctor_CellClick);
 			// 
 			// doctorId
 			// 
@@ -675,30 +676,30 @@ namespace HealthStyleView {
 public: Void RefreshDoctorDGV();
 
 private: System::Void btnUpdateDoctor_Click(System::Object^ sender, System::EventArgs^ e) {
-	Doctor^ p = gcnew Doctor();
+	Doctor^ d = gcnew Doctor();
 	try {
 		if (txtId->Text->Trim() == "") {
 			MessageBox::Show("El Id no debe estar vacío.");
 			return;
 		}
-		p->Id = Int32::Parse(txtId->Text);
-		p->Gender = rbtnMale->Checked ? 'M' : 'F';
-		p->Name = txtName->Text;
-		p->LastName = txtLastName->Text;
-		p->DocNumber = txtDNI->Text;
-		p->Address = txtAddress->Text;
-		p->Email = txtEmail->Text;
-		p->PhoneNumber = txtPhoneNumber->Text;
-		p->Schedule = txtSchedule->Text;
-		p->Speciality = txtSpeciality->Text;
-		p->Birthday = dtpBirthday->Value.ToString("yyyy-MM-dd");
+		d->Id = Int32::Parse(txtId->Text);
+		d->Gender = rbtnMale->Checked ? 'M' : 'F';
+		d->Name = txtName->Text;
+		d->LastName = txtLastName->Text;
+		d->DocNumber = txtDNI->Text;
+		d->Address = txtAddress->Text;
+		d->Email = txtEmail->Text;
+		d->PhoneNumber = txtPhoneNumber->Text;
+		d->Schedule = txtSchedule->Text;
+		d->Speciality = txtSpeciality->Text;
+		d->Birthday = dtpBirthday->Value.ToString("yyyy-MM-dd");
 	}
 	catch (Exception^ ex) {
 		MessageBox::Show(ex->ToString(), "Comparta el error al área de TI.");
 		return;
 	}
 
-	Controller::UpdateDoctor(p);
+	Controller::UpdateDoctor(d);
 	RefreshDoctorDGV();
 }
 private: System::Void btnDeleteDoctor_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -717,6 +718,22 @@ private: System::Void btnDeleteDoctor_Click(System::Object^ sender, System::Even
 
 	Controller::DeleteDoctor(doctorId);
 	RefreshDoctorDGV();
+}
+private: System::Void dgvDoctor_CellClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
+	int selectRowIndex = dgvDoctor->SelectedCells[0]->RowIndex;
+	int Id = Convert::ToInt32(dgvDoctor->Rows[selectRowIndex]->Cells[0]->Value->ToString());
+	Doctor^ d = Controller::QueryDoctorById(Id);
+	txtId->Text = "" + d->Id;
+	txtUsername->Text = d->Username;
+	txtName->Text =  d->Name;
+	txtLastName->Text = d->LastName;
+	txtDNI->Text = "" + d->DocNumber;
+	txtPhoneNumber->Text = "" + d->PhoneNumber;
+	txtSchedule->Text = d->Schedule;
+	txtSpeciality->Text = d->Speciality;
+	txtEmail->Text = d->Email;
+	txtYearsOfWork->Text = "" + d->YearsOfWork;
+
 }
 };
 }

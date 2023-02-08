@@ -16,5 +16,6 @@ namespace HealthStyleController {
 		static List<Doctor^>^ QueryAllDoctor();
 		static int UpdateDoctor(Doctor^ doctor);
 		static int DeleteDoctor(int doctorId);
+		static Doctor^ QueryDoctorById(int doctorId);
 	};
 }

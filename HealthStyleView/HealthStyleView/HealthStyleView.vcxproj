@@ -136,6 +136,12 @@
     <ClInclude Include="MedicalHistoryForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="NurseForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PatientForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="pch.h" />
     <ClInclude Include="ProfessionalSearchForm.h">
       <FileType>CppForm</FileType>
@@ -151,6 +157,8 @@
     <ClCompile Include="HealthStyleMainForm.cpp" />
     <ClCompile Include="HealthStyleView.cpp" />
     <ClCompile Include="MedicalHistoryForm.cpp" />
+    <ClCompile Include="NurseForm.cpp" />
+    <ClCompile Include="PatientForm.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

@@ -14,3 +14,4 @@ D:\LPOO\Repositorios\HealthStyleView\HealthStyleView\x64\Debug\HealthStyleView.P
 D:\LPOO\Repositorios\HealthStyleView\HealthStyleView\x64\Debug\HealthStyleView.QuoteForm.resources
 D:\LPOO\Repositorios\HealthStyleView\HealthStyleView\x64\Debug\HealthStyleView.vcxproj.GenerateResource.cache
 D:\LPOO\Repositorios\HealthStyleView\HealthStyleView\x64\Debug\HealthStyleView.vcxproj.CopyComplete
+D:\LPOO\Repositorios\HealthStyleView\HealthStyleView\x64\Debug\HealthStyleView.MedicalHistoryForm.resources

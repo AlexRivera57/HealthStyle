@@ -2,6 +2,7 @@
 #include "DoctorForm.h"
 #include "QuoteForm.h"
 #include "ProfessionalSearchForm.h"
+#include "MedicalHistoryForm.h"
 
 namespace HealthStyleView {
 
@@ -49,6 +50,8 @@ namespace HealthStyleView {
 	private: System::Windows::Forms::ToolStripMenuItem^ ayudaToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ buscarProfesionalesToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ solicitarCitaToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ salirToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ historialMédicoToolStripMenuItem;
 
 
 
@@ -67,6 +70,7 @@ namespace HealthStyleView {
 		{
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->archivoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->salirToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->mantenimientoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->pacientesToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->doctoresToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -75,6 +79,7 @@ namespace HealthStyleView {
 			this->buscarProfesionalesToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->solicitarCitaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->ayudaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->historialMédicoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -92,9 +97,17 @@ namespace HealthStyleView {
 			// 
 			// archivoToolStripMenuItem
 			// 
+			this->archivoToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->salirToolStripMenuItem });
 			this->archivoToolStripMenuItem->Name = L"archivoToolStripMenuItem";
 			this->archivoToolStripMenuItem->Size = System::Drawing::Size(60, 20);
 			this->archivoToolStripMenuItem->Text = L"Archivo";
+			// 
+			// salirToolStripMenuItem
+			// 
+			this->salirToolStripMenuItem->Name = L"salirToolStripMenuItem";
+			this->salirToolStripMenuItem->Size = System::Drawing::Size(96, 22);
+			this->salirToolStripMenuItem->Text = L"Salir";
+			this->salirToolStripMenuItem->Click += gcnew System::EventHandler(this, &HealthStyleMainForm::salirToolStripMenuItem_Click);
 			// 
 			// mantenimientoToolStripMenuItem
 			// 
@@ -127,9 +140,9 @@ namespace HealthStyleView {
 			// 
 			// operacionesToolStripMenuItem
 			// 
-			this->operacionesToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+			this->operacionesToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
 				this->buscarProfesionalesToolStripMenuItem,
-					this->solicitarCitaToolStripMenuItem
+					this->solicitarCitaToolStripMenuItem, this->historialMédicoToolStripMenuItem
 			});
 			this->operacionesToolStripMenuItem->Name = L"operacionesToolStripMenuItem";
 			this->operacionesToolStripMenuItem->Size = System::Drawing::Size(85, 20);
@@ -154,6 +167,13 @@ namespace HealthStyleView {
 			this->ayudaToolStripMenuItem->Name = L"ayudaToolStripMenuItem";
 			this->ayudaToolStripMenuItem->Size = System::Drawing::Size(53, 20);
 			this->ayudaToolStripMenuItem->Text = L"Ayuda";
+			// 
+			// historialMédicoToolStripMenuItem
+			// 
+			this->historialMédicoToolStripMenuItem->Name = L"historialMédicoToolStripMenuItem";
+			this->historialMédicoToolStripMenuItem->Size = System::Drawing::Size(182, 22);
+			this->historialMédicoToolStripMenuItem->Text = L"Historial Médico";
+			this->historialMédicoToolStripMenuItem->Click += gcnew System::EventHandler(this, &HealthStyleMainForm::historialMédicoToolStripMenuItem_Click);
 			// 
 			// HealthStyleMainForm
 			// 
@@ -186,6 +206,14 @@ private: System::Void buscarProfesionalesToolStripMenuItem_Click(System::Object^
 	ProfessionalSearchForm^ professionalSearchForm = gcnew ProfessionalSearchForm();
 	professionalSearchForm->MdiParent = this;
 	professionalSearchForm->Show();
+}
+private: System::Void salirToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	Application::Exit();
+}
+private: System::Void historialMédicoToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	MedicalHistoryForm^ medicalHistoryForm = gcnew MedicalHistoryForm();
+	medicalHistoryForm->MdiParent = this;
+	medicalHistoryForm->Show();
 }
 };
 }

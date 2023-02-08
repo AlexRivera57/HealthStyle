@@ -37,3 +37,10 @@ int HealthStyleController::Controller::DeleteDoctor(int doctorId){
         }
     return 0;
 }
+
+Doctor^ HealthStyleController::Controller::QueryDoctorById(int doctorId){
+    for (int i = 0; i < doctorList->Count; i++)
+        if (doctorId == doctorList[i]->Id)
+            return doctorList[i];
+    return nullptr;
+}
