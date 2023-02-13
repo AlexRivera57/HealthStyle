@@ -128,14 +128,19 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ChangePasswordForm.h" />
     <ClInclude Include="DoctorForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="HealthStyleMainForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="LoginEmployeeForm.h" />
     <ClInclude Include="MedicinasForm.h" />
     <ClInclude Include="NursesForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PatientForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="pch.h" />
@@ -149,11 +154,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="ChangePasswordForm.cpp" />
     <ClCompile Include="DoctorForm.cpp" />
     <ClCompile Include="HealthStyleMainForm.cpp" />
     <ClCompile Include="HealthStyleView.cpp" />
+    <ClCompile Include="LoginEmployeeForm.cpp" />
     <ClCompile Include="MedicinasForm.cpp" />
     <ClCompile Include="NursesForm.cpp" />
+    <ClCompile Include="PatientForm.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -182,15 +190,21 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ChangePasswordForm.resx" />
     <EmbeddedResource Include="DoctorForm.resx">
       <DependentUpon>DoctorForm.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HealthStyleMainForm.resx">
       <DependentUpon>HealthStyleMainForm.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HistorialForm.resx" />
+    <EmbeddedResource Include="LoginEmployeeForm.resx" />
     <EmbeddedResource Include="MedicinasForm.resx" />
     <EmbeddedResource Include="NursesForm.resx">
       <DependentUpon>NursesForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientForm.resx">
+      <DependentUpon>PatientForm.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProfessionalSearchForm.resx">
       <DependentUpon>ProfessionalSearchForm.h</DependentUpon>

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfDoctor xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Doctor>
-    <Status>65</Status>
-    <Email>avaavavaava</Email>
-    <PhoneNumber>123145151</PhoneNumber>
-    <Address>adadaadadad</Address>
-    <DocNumber>12313141</DocNumber>
-    <LastName>asass</LastName>
-    <Name>asdadadad</Name>
+    <Status>68</Status>
+    <Email>mmmm</Email>
+    <PhoneNumber>965874</PhoneNumber>
+    <Address>mmmmm</Address>
+    <DocNumber>1234567894</DocNumber>
+    <LastName>zzzz</LastName>
+    <Name>zzzzz</Name>
     <Id>1</Id>
     <YearsOfWork>0</YearsOfWork>
-    <Schedule>1231415</Schedule>
-    <Birthday>2023-02-08</Birthday>
-    <Gender>77</Gender>
-    <Password>asdadsda</Password>
-    <Username>asdad</Username>
+    <Schedule>xxxxxxx</Schedule>
+    <Birthday>2023-02-12</Birthday>
+    <Gender>0</Gender>
+    <Password>zzzzzzzz</Password>
+    <Username>zzzzzz</Username>
     <PatiensAttended>0</PatiensAttended>
-    <Speciality>aafafa</Speciality>
+    <Speciality>Cardiología</Speciality>
   </Doctor>
 </ArrayOfDoctor>

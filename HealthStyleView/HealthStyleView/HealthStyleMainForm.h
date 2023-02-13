@@ -4,6 +4,10 @@
 #include "ProfessionalSearchForm.h"
 #include "MedicinasForm.h"
 #include "NursesForm.h"
+#include "LoginEmployeeForm.h"
+#include "ChangePasswordForm.h"
+#include "PatientForm.h"
+
 namespace HealthStyleView {
 
 	using namespace System;
@@ -51,6 +55,8 @@ namespace HealthStyleView {
 	private: System::Windows::Forms::ToolStripMenuItem^ buscarProfesionalesToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ solicitarCitaToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ medicinasToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ loginToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ cambiarDeContraseñaToolStripMenuItem;
 
 
 
@@ -69,6 +75,8 @@ namespace HealthStyleView {
 		{
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->archivoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->loginToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->cambiarDeContraseñaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->mantenimientoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->pacientesToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->doctoresToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -95,9 +103,27 @@ namespace HealthStyleView {
 			// 
 			// archivoToolStripMenuItem
 			// 
+			this->archivoToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->loginToolStripMenuItem,
+					this->cambiarDeContraseñaToolStripMenuItem
+			});
 			this->archivoToolStripMenuItem->Name = L"archivoToolStripMenuItem";
 			this->archivoToolStripMenuItem->Size = System::Drawing::Size(60, 20);
 			this->archivoToolStripMenuItem->Text = L"Archivo";
+			// 
+			// loginToolStripMenuItem
+			// 
+			this->loginToolStripMenuItem->Name = L"loginToolStripMenuItem";
+			this->loginToolStripMenuItem->Size = System::Drawing::Size(196, 22);
+			this->loginToolStripMenuItem->Text = L"Login";
+			this->loginToolStripMenuItem->Click += gcnew System::EventHandler(this, &HealthStyleMainForm::loginToolStripMenuItem_Click);
+			// 
+			// cambiarDeContraseñaToolStripMenuItem
+			// 
+			this->cambiarDeContraseñaToolStripMenuItem->Name = L"cambiarDeContraseñaToolStripMenuItem";
+			this->cambiarDeContraseñaToolStripMenuItem->Size = System::Drawing::Size(196, 22);
+			this->cambiarDeContraseñaToolStripMenuItem->Text = L"Cambiar de contraseña";
+			this->cambiarDeContraseñaToolStripMenuItem->Click += gcnew System::EventHandler(this, &HealthStyleMainForm::cambiarDeContraseñaToolStripMenuItem_Click);
 			// 
 			// mantenimientoToolStripMenuItem
 			// 
@@ -114,6 +140,7 @@ namespace HealthStyleView {
 			this->pacientesToolStripMenuItem->Name = L"pacientesToolStripMenuItem";
 			this->pacientesToolStripMenuItem->Size = System::Drawing::Size(180, 22);
 			this->pacientesToolStripMenuItem->Text = L"Pacientes";
+			this->pacientesToolStripMenuItem->Click += gcnew System::EventHandler(this, &HealthStyleMainForm::pacientesToolStripMenuItem_Click);
 			// 
 			// doctoresToolStripMenuItem
 			// 
@@ -210,6 +237,21 @@ private: System::Void enfermerosToolStripMenuItem_Click(System::Object^ sender, 
 	NursesForm^ nursesForm = gcnew NursesForm();
 	nursesForm->MdiParent = this;
 	nursesForm->Show();
+}
+private: System::Void loginToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	LoginEmployeeForm^ loginEmployeeForm = gcnew LoginEmployeeForm();
+	loginEmployeeForm->MdiParent = this;
+	loginEmployeeForm->Show();
+}
+private: System::Void cambiarDeContraseñaToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	ChangePasswordForm^ changePasswordForm = gcnew ChangePasswordForm();
+	changePasswordForm->MdiParent = this;
+	changePasswordForm->Show();
+}
+private: System::Void pacientesToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	PatientForm^ patientForm = gcnew PatientForm();
+	patientForm->MdiParent = this;
+	patientForm->Show();
 }
 };
 }

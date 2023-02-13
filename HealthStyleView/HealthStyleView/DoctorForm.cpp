@@ -10,11 +10,12 @@ Void HealthStyleView::DoctorForm::RefreshDoctorDGV()
 	dgvDoctor->Rows->Clear();
 	for (int i = 0; i < doctorList->Count; i++) {
 		dgvDoctor->Rows->Add(gcnew array<String^> {
-			"" + doctorList[i]->Id,
+		   "" + doctorList[i]->Id,
 				doctorList[i]->Name,
 				doctorList[i]->LastName,
 				doctorList[i]->Email,
-				doctorList[i]->PhoneNumber,
+			    doctorList[i]->Address,
+		   "" + doctorList[i]->PhoneNumber,
 				doctorList[i]->Schedule,
 				doctorList[i]->Speciality,
 			"" + doctorList[i]->DocNumber,
