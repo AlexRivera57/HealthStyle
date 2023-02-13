@@ -7,6 +7,7 @@
 #include "LoginEmployeeForm.h"
 #include "ChangePasswordForm.h"
 #include "PatientForm.h"
+#include "HistorialForm.h"
 
 namespace HealthStyleView {
 
@@ -57,7 +58,7 @@ namespace HealthStyleView {
 	private: System::Windows::Forms::ToolStripMenuItem^ medicinasToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ loginToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ cambiarDeContraseñaToolStripMenuItem;
-
+	private: System::Windows::Forms::ToolStripMenuItem^ historialMedicoToolStripMenuItem;
 
 
 	private:
@@ -86,6 +87,7 @@ namespace HealthStyleView {
 			this->buscarProfesionalesToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->solicitarCitaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->ayudaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->historialMedicoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -192,6 +194,13 @@ namespace HealthStyleView {
 			this->ayudaToolStripMenuItem->Name = L"ayudaToolStripMenuItem";
 			this->ayudaToolStripMenuItem->Size = System::Drawing::Size(53, 20);
 			this->ayudaToolStripMenuItem->Text = L"Ayuda";
+			// 
+			// historialMedicoToolStripMenuItem
+			// 
+			this->historialMedicoToolStripMenuItem->Name = L"historialMedicoToolStripMenuItem";
+			this->historialMedicoToolStripMenuItem->Size = System::Drawing::Size(270, 34);
+			this->historialMedicoToolStripMenuItem->Text = L"Historial Medico";
+			this->historialMedicoToolStripMenuItem->Click += gcnew System::EventHandler(this, &HealthStyleMainForm::historialMedicoToolStripMenuItem_Click);
 			// 
 			// HealthStyleMainForm
 			// 
