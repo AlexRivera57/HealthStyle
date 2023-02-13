@@ -1,16 +1,17 @@
-/**
- * Project Untitled
- */
-#pragma once
 
+#pragma once
+#include "Patient.h"
 using namespace System;
 
 namespace HealthStyleModel {
-    public ref class MedicalHistory {
+    public ref class MedicalHistory : public Patient {
     public:
         property double Height;
         property double Weight;
-        property String^ Enfermedades;
-        property String^ Tratamientos;
+        property char BloodType;
+        property String^ PreviousDiseases;
+        property String^ CurrentDiseases;
+        property String^ Medicines;
+        property String^ Treatments;
     };
 }
