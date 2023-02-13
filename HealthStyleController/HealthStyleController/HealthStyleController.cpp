@@ -127,3 +127,40 @@ int HealthStyleController::Controller::DeleteNurses(int nurseId){
     }
     return 0;
 }
+
+//Medical History controller actions;
+int HealthStyleController::Controller::AddHistorial(MedicalHistory^ historial)
+{
+    historialList->Add(historial);
+    Persistance::PersistBinary("historial.bin", historialList);
+    return historial->Id;
+}
+
+List<MedicalHistory^>^ HealthStyleController::Controller::QueryAllHistorial()
+{
+    historialList = (List<MedicalHistory^>^)Persistance::LoadBinaryData("historial.bin");
+    return historialList;
+}
+
+int HealthStyleController::Controller::UpdateHistorial(MedicalHistory^ historial)
+{
+    for (int i = 0; i < historialList->Count; i++)
+        if (historialList[i]->Id == historial->Id) {
+            historialList[i] = historial;
+            Persistance::PersistBinary("historial.bin", historialList);
+            return historial->Id;
+        }
+    return 0;
+}
+
+int HealthStyleController::Controller::DeleteHistorial(int historialId)
+{
+    for (int i = 0; i < historialList->Count; i++)
+        if (historialList[i]->Id == historialId) {
+            historialList->RemoveAt(i);
+            Persistance::PersistBinary("historial.bin", historialList);
+            return historialId;
+        }
+    return 0;
+}
+
