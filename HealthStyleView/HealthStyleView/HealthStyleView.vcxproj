@@ -135,6 +135,7 @@
     <ClInclude Include="HealthStyleMainForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="HistorialForm.h" />
     <ClInclude Include="LoginEmployeeForm.h" />
     <ClInclude Include="MedicinasForm.h" />
     <ClInclude Include="NursesForm.h">
@@ -158,6 +159,7 @@
     <ClCompile Include="DoctorForm.cpp" />
     <ClCompile Include="HealthStyleMainForm.cpp" />
     <ClCompile Include="HealthStyleView.cpp" />
+    <ClCompile Include="HistorialForm.cpp" />
     <ClCompile Include="LoginEmployeeForm.cpp" />
     <ClCompile Include="MedicinasForm.cpp" />
     <ClCompile Include="NursesForm.cpp" />
@@ -173,6 +175,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico" />
+    <Image Include="medic_historial.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
