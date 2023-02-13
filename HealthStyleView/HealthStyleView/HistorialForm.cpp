@@ -1,4 +1,5 @@
-#include "HealthStyleView.h";
+#include "pch.h"
+#include "HistorialForm.h";
 using namespace System;
 using namespace System::Windows::Forms;
 [STAThreadAttribute]
@@ -9,3 +10,4 @@ void Main(array<String^>^ args) {
 	HealthStyleView::HistorialForm form;
 	Application::Run(% form);
 }
+
