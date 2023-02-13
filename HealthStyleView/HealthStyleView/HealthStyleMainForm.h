@@ -27,13 +27,13 @@ namespace HealthStyleView {
 		{
 			InitializeComponent();
 			//
-			//TODO: agregar código de constructor aquí
+			//TODO: agregar cÃ³digo de constructor aquÃ­
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Limpiar los recursos que se estén usando.
+		/// Limpiar los recursos que se estÃ©n usando.
 		/// </summary>
 		~HealthStyleMainForm()
 		{
@@ -56,27 +56,27 @@ namespace HealthStyleView {
 	private: System::Windows::Forms::ToolStripMenuItem^ solicitarCitaToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ medicinasToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ loginToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^ cambiarDeContraseñaToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ cambiarDeContraseÃ±aToolStripMenuItem;
 
 
 
 	private:
 		/// <summary>
-		/// Variable del diseñador necesaria.
+		/// Variable del diseÃ±ador necesaria.
 		/// </summary>
 		System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Método necesario para admitir el Diseñador. No se puede modificar
-		/// el contenido de este método con el editor de código.
+		/// MÃ©todo necesario para admitir el DiseÃ±ador. No se puede modificar
+		/// el contenido de este mÃ©todo con el editor de cÃ³digo.
 		/// </summary>
 		void InitializeComponent(void)
 		{
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->archivoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->loginToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->cambiarDeContraseñaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->cambiarDeContraseÃ±aToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->mantenimientoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->pacientesToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->doctoresToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -105,7 +105,7 @@ namespace HealthStyleView {
 			// 
 			this->archivoToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
 				this->loginToolStripMenuItem,
-					this->cambiarDeContraseñaToolStripMenuItem
+					this->cambiarDeContraseÃ±aToolStripMenuItem
 			});
 			this->archivoToolStripMenuItem->Name = L"archivoToolStripMenuItem";
 			this->archivoToolStripMenuItem->Size = System::Drawing::Size(60, 20);
@@ -118,12 +118,12 @@ namespace HealthStyleView {
 			this->loginToolStripMenuItem->Text = L"Login";
 			this->loginToolStripMenuItem->Click += gcnew System::EventHandler(this, &HealthStyleMainForm::loginToolStripMenuItem_Click);
 			// 
-			// cambiarDeContraseñaToolStripMenuItem
+			// cambiarDeContraseÃ±aToolStripMenuItem
 			// 
-			this->cambiarDeContraseñaToolStripMenuItem->Name = L"cambiarDeContraseñaToolStripMenuItem";
-			this->cambiarDeContraseñaToolStripMenuItem->Size = System::Drawing::Size(196, 22);
-			this->cambiarDeContraseñaToolStripMenuItem->Text = L"Cambiar de contraseña";
-			this->cambiarDeContraseñaToolStripMenuItem->Click += gcnew System::EventHandler(this, &HealthStyleMainForm::cambiarDeContraseñaToolStripMenuItem_Click);
+			this->cambiarDeContraseÃ±aToolStripMenuItem->Name = L"cambiarDeContraseÃ±aToolStripMenuItem";
+			this->cambiarDeContraseÃ±aToolStripMenuItem->Size = System::Drawing::Size(196, 22);
+			this->cambiarDeContraseÃ±aToolStripMenuItem->Text = L"Cambiar de contraseÃ±a";
+			this->cambiarDeContraseÃ±aToolStripMenuItem->Click += gcnew System::EventHandler(this, &HealthStyleMainForm::cambiarDeContraseÃ±aToolStripMenuItem_Click);
 			// 
 			// mantenimientoToolStripMenuItem
 			// 
@@ -243,7 +243,7 @@ private: System::Void loginToolStripMenuItem_Click(System::Object^ sender, Syste
 	loginEmployeeForm->MdiParent = this;
 	loginEmployeeForm->Show();
 }
-private: System::Void cambiarDeContraseñaToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+private: System::Void cambiarDeContraseÃ±aToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 	ChangePasswordForm^ changePasswordForm = gcnew ChangePasswordForm();
 	changePasswordForm->MdiParent = this;
 	changePasswordForm->Show();
@@ -252,6 +252,12 @@ private: System::Void pacientesToolStripMenuItem_Click(System::Object^ sender, S
 	PatientForm^ patientForm = gcnew PatientForm();
 	patientForm->MdiParent = this;
 	patientForm->Show();
+}
+
+private: System::Void historialMedicoToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	HistorialForm^ historialForm = gcnew HistorialForm();
+	historialForm->MdiParent = this;
+	historialForm->Show();
 }
 };
 }
