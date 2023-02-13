@@ -34,5 +34,10 @@ namespace HealthStyleController {
 		static List<Nurses^>^ QueryAllNurses();
 		static int UpdateNurses(Nurses^ nurse);
 		static int DeleteNurses(int nurseId);
+		//
+		static int AddHistorial(MedicalHistory^ historial);
+		static List<MedicalHistory^>^ QueryAllHistorial();
+		static int UpdateHistorial(MedicalHistory^ historial);
+		static int DeleteHistorial(int historial);
 	};
 }
