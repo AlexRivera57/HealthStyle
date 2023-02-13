@@ -10,9 +10,12 @@ namespace HealthStyleController {
 		//static List<Medicines^>^ medicinesList = gcnew List<Medicines^>();
 		//
 		static List<Doctor^>^ doctorList = gcnew List<Doctor^>();
+		static List<Nurses^>^ nursesList = gcnew List<Nurses^>();
 		static List<Patient^>^ patientList = gcnew List<Patient^>();
 		static List<Medicines^>^ medicinesList = gcnew List<Medicines^>();
-		static List <Quote^>^ salesList = gcnew List<Quote^>(); // Lista de ventas registradas
+		static List <Quote^>^ salesList = gcnew List<Quote^>(); 
+		static List<MedicalHistory^>^ historialList = gcnew List<MedicalHistory^>(); // Variable de clase (global) para la lista de historiales
+
 	public:
 		static int AddMedicine(Medicines^ medicines);
 		static Medicines^ QueryMedicineById(int medicineId);
@@ -25,5 +28,11 @@ namespace HealthStyleController {
 		static List<Doctor^>^ QueryAllDoctor();
 		static int UpdateDoctor(Doctor^ doctor);
 		static int DeleteDoctor(int doctorId);
+		//
+		static int AddNurses(Nurses^ nurse);
+		static Nurses^ QueryNursesById(int nurseId);
+		static List<Nurses^>^ QueryAllNurses();
+		static int UpdateNurses(Nurses^ nurse);
+		static int DeleteNurses(int nurseId);
 	};
 }
