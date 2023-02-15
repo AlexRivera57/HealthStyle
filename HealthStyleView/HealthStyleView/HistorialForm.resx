@@ -121,7 +121,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
-        0gAADdIBb5L+jgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAFSzSURBVHhe7d13
+        0AAADdABEGw9BwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAFSzSURBVHhe7d13
         vBRF2j785ZAOOSdBJCuSVQwYEVCSYEBQQTKiAiKIgIAZFQOCiGAOiAmzYgIEzAkVAcPq7uo+6+q6uiYw
         /Hb3fertGjyPY3n1ma6Z6bmr+lzz+Xz/uZXu6bvrVF1nzszUH5RSZAgexwRuCLwZ+HdAF130ZeDpwMWB
         VuhaiIiIEFgsq4JH48CjgfRF1hc7ApMC5dC1ERERpYPFsih46MX/i0D6ouqjG9H1ERERpYPFsih4PJa2
@@ -486,15 +486,6 @@
         gVWBiYEmaB0pm9Qf/n8YO7GbyKb6MwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="BloodType.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="PreviousDiseases.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Medicines.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="BloodType.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

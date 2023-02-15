@@ -162,7 +162,7 @@ namespace HealthStyleView {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(125, 122);
+			this->label1->Location = System::Drawing::Point(21, 119);
 			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(56, 20);
@@ -172,7 +172,7 @@ namespace HealthStyleView {
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(122, 172);
+			this->label2->Location = System::Drawing::Point(18, 169);
 			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(59, 20);
@@ -182,7 +182,7 @@ namespace HealthStyleView {
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(746, 73);
+			this->label3->Location = System::Drawing::Point(528, 64);
 			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(132, 20);
@@ -192,7 +192,7 @@ namespace HealthStyleView {
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(746, 291);
+			this->label4->Location = System::Drawing::Point(528, 282);
 			this->label4->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(90, 20);
@@ -201,7 +201,7 @@ namespace HealthStyleView {
 			// 
 			// txtHeight
 			// 
-			this->txtHeight->Location = System::Drawing::Point(308, 115);
+			this->txtHeight->Location = System::Drawing::Point(204, 112);
 			this->txtHeight->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->txtHeight->Name = L"txtHeight";
 			this->txtHeight->Size = System::Drawing::Size(148, 26);
@@ -209,7 +209,7 @@ namespace HealthStyleView {
 			// 
 			// txtWeight
 			// 
-			this->txtWeight->Location = System::Drawing::Point(308, 166);
+			this->txtWeight->Location = System::Drawing::Point(204, 163);
 			this->txtWeight->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->txtWeight->Name = L"txtWeight";
 			this->txtWeight->Size = System::Drawing::Size(148, 26);
@@ -217,7 +217,7 @@ namespace HealthStyleView {
 			// 
 			// txtDiseases
 			// 
-			this->txtDiseases->Location = System::Drawing::Point(913, 70);
+			this->txtDiseases->Location = System::Drawing::Point(695, 61);
 			this->txtDiseases->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->txtDiseases->Multiline = true;
 			this->txtDiseases->Name = L"txtDiseases";
@@ -226,7 +226,7 @@ namespace HealthStyleView {
 			// 
 			// txtTreatments
 			// 
-			this->txtTreatments->Location = System::Drawing::Point(913, 291);
+			this->txtTreatments->Location = System::Drawing::Point(695, 282);
 			this->txtTreatments->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->txtTreatments->Multiline = true;
 			this->txtTreatments->Name = L"txtTreatments";
@@ -236,7 +236,7 @@ namespace HealthStyleView {
 			// label5
 			// 
 			this->label5->AutoSize = true;
-			this->label5->Location = System::Drawing::Point(612, 19);
+			this->label5->Location = System::Drawing::Point(455, 9);
 			this->label5->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(163, 20);
@@ -246,17 +246,17 @@ namespace HealthStyleView {
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(1217, 28);
+			this->pictureBox1->Location = System::Drawing::Point(943, 9);
 			this->pictureBox1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(159, 136);
+			this->pictureBox1->Size = System::Drawing::Size(123, 124);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox1->TabIndex = 10;
 			this->pictureBox1->TabStop = false;
 			// 
 			// btnAdd
 			// 
-			this->btnAdd->Location = System::Drawing::Point(236, 413);
+			this->btnAdd->Location = System::Drawing::Point(62, 413);
 			this->btnAdd->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->btnAdd->Name = L"btnAdd";
 			this->btnAdd->Size = System::Drawing::Size(112, 35);
@@ -267,7 +267,7 @@ namespace HealthStyleView {
 			// 
 			// btnModify
 			// 
-			this->btnModify->Location = System::Drawing::Point(632, 413);
+			this->btnModify->Location = System::Drawing::Point(432, 413);
 			this->btnModify->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->btnModify->Name = L"btnModify";
 			this->btnModify->Size = System::Drawing::Size(112, 35);
@@ -278,7 +278,7 @@ namespace HealthStyleView {
 			// 
 			// btnDelete
 			// 
-			this->btnDelete->Location = System::Drawing::Point(1029, 413);
+			this->btnDelete->Location = System::Drawing::Point(752, 413);
 			this->btnDelete->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->btnDelete->Name = L"btnDelete";
 			this->btnDelete->Size = System::Drawing::Size(112, 35);
@@ -294,11 +294,11 @@ namespace HealthStyleView {
 				this->Names, this->Height,
 					this->Weight, this->BloodType, this->PreviousDiseases, this->CurrentDiseases, this->Medicines, this->Treatments
 			});
-			this->dgvHistorial->Location = System::Drawing::Point(41, 487);
+			this->dgvHistorial->Location = System::Drawing::Point(71, 497);
 			this->dgvHistorial->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->dgvHistorial->Name = L"dgvHistorial";
 			this->dgvHistorial->RowHeadersWidth = 62;
-			this->dgvHistorial->Size = System::Drawing::Size(1347, 245);
+			this->dgvHistorial->Size = System::Drawing::Size(921, 245);
 			this->dgvHistorial->TabIndex = 14;
 			// 
 			// Names
@@ -360,7 +360,7 @@ namespace HealthStyleView {
 			// label6
 			// 
 			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(122, 295);
+			this->label6->Location = System::Drawing::Point(18, 292);
 			this->label6->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(139, 20);
@@ -369,7 +369,7 @@ namespace HealthStyleView {
 			// 
 			// txtPreviousDiseases
 			// 
-			this->txtPreviousDiseases->Location = System::Drawing::Point(308, 291);
+			this->txtPreviousDiseases->Location = System::Drawing::Point(204, 288);
 			this->txtPreviousDiseases->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->txtPreviousDiseases->Multiline = true;
 			this->txtPreviousDiseases->Name = L"txtPreviousDiseases";
@@ -379,7 +379,7 @@ namespace HealthStyleView {
 			// label7
 			// 
 			this->label7->AutoSize = true;
-			this->label7->Location = System::Drawing::Point(122, 235);
+			this->label7->Location = System::Drawing::Point(18, 232);
 			this->label7->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(84, 20);
@@ -389,7 +389,7 @@ namespace HealthStyleView {
 			// label8
 			// 
 			this->label8->AutoSize = true;
-			this->label8->Location = System::Drawing::Point(746, 185);
+			this->label8->Location = System::Drawing::Point(528, 176);
 			this->label8->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label8->Name = L"label8";
 			this->label8->Size = System::Drawing::Size(80, 20);
@@ -398,7 +398,7 @@ namespace HealthStyleView {
 			// 
 			// txtBloodType
 			// 
-			this->txtBloodType->Location = System::Drawing::Point(308, 235);
+			this->txtBloodType->Location = System::Drawing::Point(204, 232);
 			this->txtBloodType->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->txtBloodType->Name = L"txtBloodType";
 			this->txtBloodType->Size = System::Drawing::Size(148, 26);
@@ -406,7 +406,7 @@ namespace HealthStyleView {
 			// 
 			// txtMedicines
 			// 
-			this->txtMedicines->Location = System::Drawing::Point(913, 185);
+			this->txtMedicines->Location = System::Drawing::Point(695, 176);
 			this->txtMedicines->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->txtMedicines->Multiline = true;
 			this->txtMedicines->Name = L"txtMedicines";
@@ -416,7 +416,7 @@ namespace HealthStyleView {
 			// label9
 			// 
 			this->label9->AutoSize = true;
-			this->label9->Location = System::Drawing::Point(125, 70);
+			this->label9->Location = System::Drawing::Point(21, 67);
 			this->label9->Name = L"label9";
 			this->label9->Size = System::Drawing::Size(59, 20);
 			this->label9->TabIndex = 23;
@@ -424,7 +424,7 @@ namespace HealthStyleView {
 			// 
 			// txtName
 			// 
-			this->txtName->Location = System::Drawing::Point(308, 64);
+			this->txtName->Location = System::Drawing::Point(204, 61);
 			this->txtName->Name = L"txtName";
 			this->txtName->Size = System::Drawing::Size(306, 26);
 			this->txtName->TabIndex = 24;
@@ -433,7 +433,7 @@ namespace HealthStyleView {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1414, 772);
+			this->ClientSize = System::Drawing::Size(1092, 772);
 			this->Controls->Add(this->txtName);
 			this->Controls->Add(this->label9);
 			this->Controls->Add(this->txtMedicines);
@@ -528,11 +528,11 @@ namespace HealthStyleView {
 		ShowHistorial();
 	}
 	private: System::Void btnDelete_Click(System::Object^ sender, System::EventArgs^ e) {
-		if (txtName->Text->Trim() == "") {
+		if (txtWeight->Text->Trim() == "") {
 			MessageBox::Show("Debe seleccionar un producto");
 			return;
 		}
-		Controller::DeleteHistorial(Convert::ToInt32(txtName->Text->Trim()));
+		Controller::DeleteHistorial(Convert::ToInt32(txtWeight->Text->Trim()));
 		CleanControls();
 		ShowHistorial();
 	}
