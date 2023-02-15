@@ -1,0 +1,4 @@
+C:\LPOO\git\HealthStyleModel-master\HealthStyleModel-master\x64\Debug\HealthStyleModel.vcxproj.AssemblyReference.cache
+C:\LPOO\git\HealthStyleModel-master\HealthStyleModel-master\x64\Debug\HealthStyleModel.dll
+D:\LPOO\HealthStyle\HealthStyleModel-master\HealthStyleModel-master\x64\Debug\HealthStyleModel.vcxproj.AssemblyReference.cache
+D:\LPOO\HealthStyle\HealthStyleModel-master\HealthStyleModel-master\x64\Debug\HealthStyleModel.dll

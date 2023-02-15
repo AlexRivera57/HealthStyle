@@ -1,0 +1,23 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly HealthStylePersistance, Version=1.0.*, Culture=Todos los idiomas (todos los países): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly HealthStyleModel, Version=1.0.*, Culture=Todos los idiomas (todos los países): 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class HealthStylePersistance.Persistance: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Persist(String, Object): PrivateScope, Public, Static, HideBySig
+    PersistXML(String, Object): PrivateScope, Public, Static, HideBySig
+    PersistBinary(String, Object): PrivateScope, Public, Static, HideBySig
+    LoadData(String): PrivateScope, Public, Static, HideBySig
+    LoadXMLData(String): PrivateScope, Public, Static, HideBySig
+    LoadBinaryData(String): PrivateScope, Public, Static, HideBySig
+    NursePersistXLM(String, Object): PrivateScope, Public, Static, HideBySig
