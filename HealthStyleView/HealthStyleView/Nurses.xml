@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfNurses xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Nurses>
+    <Status>Disponible</Status>
+    <Email>xxxxxxxxxxxxxx</Email>
+    <PhoneNumber>123456789</PhoneNumber>
+    <Address>xxxxxxxxxxxx</Address>
+    <DocNumber>4562789</DocNumber>
+    <LastName>Ocampo</LastName>
+    <Name>Alfonso</Name>
+    <Id>1</Id>
+    <YearsOfWork>5</YearsOfWork>
+    <Schedule>Sábado 10a.m</Schedule>
+    <Birthday>2002-09-07</Birthday>
+    <Gender>Masculino</Gender>
+    <Password>password</Password>
+    <Username>Alfonso</Username>
+    <Speciality>Geriatría</Speciality>
+    <PatiensAttended>45</PatiensAttended>
+  </Nurses>
+  <Nurses>
+    <Status>Disponible</Status>
+    <Email>mmmmmmmmmmmmm</Email>
+    <PhoneNumber>456987321</PhoneNumber>
+    <Address>aaaaaaaaaaaa</Address>
+    <DocNumber>14523698</DocNumber>
+    <LastName>Valdivia</LastName>
+    <Name>Gladis</Name>
+    <Id>2</Id>
+    <YearsOfWork>2</YearsOfWork>
+    <Schedule>Viernes 9a.m</Schedule>
+    <Birthday>2002-09-07</Birthday>
+    <Gender>Femenino</Gender>
+    <Password>password</Password>
+    <Username>Gladis</Username>
+    <Speciality>Control del crecimiento y desarrollo del niño</Speciality>
+    <PatiensAttended>4</PatiensAttended>
+  </Nurses>
+  <Nurses>
+    <Status>Disponible</Status>
+    <Email>aaaaaaaaaa</Email>
+    <PhoneNumber>987456356</PhoneNumber>
+    <Address>aaaaaaaaaa</Address>
+    <DocNumber>42424242</DocNumber>
+    <LastName>Viera</LastName>
+    <Name>Ana</Name>
+    <Id>3</Id>
+    <YearsOfWork>3</YearsOfWork>
+    <Schedule>Jueves 5p.m</Schedule>
+    <Birthday>2023-02-15</Birthday>
+    <Gender>Femenino</Gender>
+    <Password>password</Password>
+    <Username>AnaV</Username>
+    <Speciality>Control del crecimiento y desarrollo del adolescente</Speciality>
+    <PatiensAttended>10</PatiensAttended>
+  </Nurses>
+  <Nurses>
+    <Status>Disponible</Status>
+    <Email>ssssssssssssssss</Email>
+    <PhoneNumber>98653265</PhoneNumber>
+    <Address>ssssssssssssssss</Address>
+    <DocNumber>58463227</DocNumber>
+    <LastName>Guevara</LastName>
+    <Name>Óscar</Name>
+    <Id>4</Id>
+    <YearsOfWork>4</YearsOfWork>
+    <Schedule>Miércoles 3p.m</Schedule>
+    <Birthday>1989-07-04</Birthday>
+    <Gender>Masculino</Gender>
+    <Password>password</Password>
+    <Username>Oscar</Username>
+    <Speciality>General</Speciality>
+    <PatiensAttended>28</PatiensAttended>
+  </Nurses>
+</ArrayOfNurses>

@@ -1,0 +1,10 @@
+﻿  HealthStyleMainForm.cpp
+D:\LPOO\HealthStyle\HealthStyleView\HealthStyleView\HistorialForm.h(475,46): warning C4244: 'argumento': conversión de 'wchar_t' a 'char'; posible pérdida de datos
+D:\LPOO\HealthStyle\HealthStyleView\HealthStyleView\HistorialForm.h(520,46): warning C4244: 'argumento': conversión de 'wchar_t' a 'char'; posible pérdida de datos
+  HealthStyleView.cpp
+D:\LPOO\HealthStyle\HealthStyleView\HealthStyleView\HistorialForm.h(475,46): warning C4244: 'argumento': conversión de 'wchar_t' a 'char'; posible pérdida de datos
+D:\LPOO\HealthStyle\HealthStyleView\HealthStyleView\HistorialForm.h(520,46): warning C4244: 'argumento': conversión de 'wchar_t' a 'char'; posible pérdida de datos
+  NursesForm.cpp
+  Generando código...
+  AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
+  HealthStyleView.vcxproj -> D:\LPOO\HealthStyle\HealthStyleModel-master\HealthStyleModel-master\x64\Debug\HealthStyleView.exe

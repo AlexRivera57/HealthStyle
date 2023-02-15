@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDoctor xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Doctor>
+    <Status>Disponible</Status>
+    <Email>xxxxxxxxxxxxxxxxx</Email>
+    <PhoneNumber>987654321</PhoneNumber>
+    <Address>zzzzzzzzzzzzzzzzz</Address>
+    <DocNumber>12345678</DocNumber>
+    <LastName>Valdivies</LastName>
+    <Name>Ana</Name>
+    <Id>1</Id>
+    <YearsOfWork>4</YearsOfWork>
+    <Schedule>Martes 3p.m</Schedule>
+    <Birthday>2023-02-14</Birthday>
+    <Gender>Femenino</Gender>
+    <Password>password</Password>
+    <Username>Ana</Username>
+    <PatiensAttended>15</PatiensAttended>
+    <Speciality>Pediatría</Speciality>
+  </Doctor>
+  <Doctor>
+    <Status>No Disponible</Status>
+    <Email>zzzzzzzzzzzz</Email>
+    <PhoneNumber>963258741</PhoneNumber>
+    <Address>xxxxxxxxxxx</Address>
+    <DocNumber>45632198</DocNumber>
+    <LastName>Molon</LastName>
+    <Name>Jorge </Name>
+    <Id>2</Id>
+    <YearsOfWork>3</YearsOfWork>
+    <Schedule>Lunes 5p.m</Schedule>
+    <Birthday>2023-02-14</Birthday>
+    <Gender>Masculino</Gender>
+    <Password>pasword</Password>
+    <Username>Jorge</Username>
+    <PatiensAttended>23</PatiensAttended>
+    <Speciality>Cardiología</Speciality>
+  </Doctor>
+  <Doctor>
+    <Status>Disponible</Status>
+    <Email>xxxxxxxxxxxxxx</Email>
+    <PhoneNumber>987563214</PhoneNumber>
+    <Address>aaaaaaaaaaaaaa</Address>
+    <DocNumber>78564239</DocNumber>
+    <LastName>Ocampo</LastName>
+    <Name>Francisco</Name>
+    <Id>3</Id>
+    <YearsOfWork>4</YearsOfWork>
+    <Schedule>Lunes 10a.m</Schedule>
+    <Birthday>2023-02-14</Birthday>
+    <Gender>Masculino</Gender>
+    <Password>password</Password>
+    <Username>Francisco</Username>
+    <PatiensAttended>15</PatiensAttended>
+    <Speciality>General</Speciality>
+  </Doctor>
+</ArrayOfDoctor>
