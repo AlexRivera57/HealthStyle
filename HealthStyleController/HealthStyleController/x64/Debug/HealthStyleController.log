@@ -1,4 +1,0 @@
-﻿  HealthStyleController.cpp
-D:\LPOO\HealthStyle_G3\HealthStyle\HealthStyleController\HealthStyleController\HealthStyleController.cpp(91): warning C4715: 'HealthStyleController::Controller::DeleteDoctor': no todas las rutas de acceso de control devuelven un valor
-  AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
-  HealthStyleController.vcxproj -> D:\LPOO\HealthStyle_G3\HealthStyle\HealthStyleModel-master\HealthStyleModel-master\x64\Debug\HealthStyleController.dll
