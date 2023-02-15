@@ -24,6 +24,18 @@ void HealthStylePersistance::Persistance::Persist(String^ fileName, Object^ pers
                     ((List<Medicines^>^)persistObject)[i]->Stock);
             }
         }
+        if (persistObject->GetType() == List<MedicalHistory^>::typeid) {
+            for (int i = 0; i < ((List<MedicalHistory^>^)persistObject)->Count; i++) {
+                escritor->WriteLine(((List<MedicalHistory^>^)persistObject)[i]->Name + "," +
+                    ((List<MedicalHistory^>^)persistObject)[i]->Height + "," +
+                    ((List<MedicalHistory^>^)persistObject)[i]->Weight + "," +
+                    ((List<MedicalHistory^>^)persistObject)[i]->BloodType + "," +
+                    ((List<MedicalHistory^>^)persistObject)[i]->PreviousDiseases + "," +
+                    ((List<MedicalHistory^>^)persistObject)[i]->CurrentDiseases + "," + 
+                    ((List<MedicalHistory^>^)persistObject)[i]->Medicines + "," + 
+                    ((List<MedicalHistory^>^)persistObject)[i]->Treatments);
+            }
+        }
     }
     catch (Exception^ ex) {
         throw ex;
@@ -188,6 +200,12 @@ Object^ HealthStylePersistance::Persistance::LoadBinaryData(String^ fileName)
                 res = (List<Medicines^>^)formateador->Deserialize(input);
             }
         }
+        if (fileName->Equals("historial.bin")) {
+            res = gcnew List<MedicalHistory^>();
+            if (File::Exists(fileName)) {
+                res = (List<MedicalHistory^>^)formateador->Deserialize(input);
+            }
+        }        
         // if (fileName->Equals("salesmen.bin")) {
           //   res = gcnew List<Salesman^>();
             // if (File::Exists(fileName)) {
