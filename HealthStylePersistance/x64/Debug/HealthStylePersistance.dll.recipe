@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\LPOO\HealthStyle\HealthStyleModel-master\HealthStyleModel-master\x64\Debug\HealthStyleModel.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\LPOO\HealthStyle\HealthStyleModel-master\HealthStyleModel-master\x64\Debug\HealthStylePersistance.dll</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>
