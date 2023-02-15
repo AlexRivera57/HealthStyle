@@ -1,0 +1,6 @@
+C:\LPOO\git\HealthStyleController\HealthStyleController\x64\Debug\HealthStyleController.vcxproj.AssemblyReference.cache
+C:\LPOO\git\HealthStyleController\HealthStyleController\x64\Debug\HealthStyleController.vcxproj.CopyComplete
+D:\LPOO\HealthStyle_G3\HealthStyle\HealthStyleController\HealthStyleController\x64\Debug\HealthStyleController.vcxproj.AssemblyReference.cache
+D:\LPOO\HealthStyle_G3\HealthStyle\HealthStyleController\HealthStyleController\x64\Debug\HealthStyleController.vcxproj.CopyComplete
+D:\LPOO\HealthStyle\HealthStyleController\HealthStyleController\x64\Debug\HealthStyleController.vcxproj.AssemblyReference.cache
+D:\LPOO\HealthStyle\HealthStyleController\HealthStyleController\x64\Debug\HealthStyleController.vcxproj.CopyComplete

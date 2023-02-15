@@ -1,0 +1,7 @@
+﻿  HealthStyleController.cpp
+D:\LPOO\HealthStyle\HealthStyleController\HealthStyleController\HealthStyleController.cpp(1,1): warning C4005: '__CLR_VER': redefinición de macro
+D:\LPOO\HealthStyle\HealthStyleController\HealthStyleController\HealthStyleController.cpp(1,1): message : '__CLR_VER' declarado previamente en la línea de comandos
+D:\LPOO\HealthStyle\HealthStyleController\HealthStyleController\HealthStyleController.cpp(1,1): warning C4651: Se especificó '/D__CLR_VER=40804515' para el encabezado precompilado pero no para la compilación actual
+D:\LPOO\HealthStyle\HealthStyleController\HealthStyleController\HealthStyleController.cpp(127): warning C4715: 'HealthStyleController::Controller::DeleteDoctor': no todas las rutas de acceso de control devuelven un valor
+  AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
+  HealthStyleController.vcxproj -> D:\LPOO\HealthStyle\HealthStyleModel-master\HealthStyleModel-master\x64\Debug\HealthStyleController.dll
